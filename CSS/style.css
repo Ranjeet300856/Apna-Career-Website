@@ -50,6 +50,10 @@ header {
     color: white;
 }
 
+.website-name a {
+    text-decoration: none;
+}
+
 .navbar {
     height: fit-content;
     width: 100%;
@@ -92,7 +96,7 @@ header {
 
 /* CSS For Dasktop */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     /* Header */
     .navbar a {
