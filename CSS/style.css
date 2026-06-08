@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS For Mobile Phone */
+
+/* Header */
+header {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: #1E3A8A;
+}
+
+.logo-container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+.logo img {
+    height: auto;
+    width: 90px;
+    border: 2px solid #1E3A8A;
+    border-radius: 50%;
+}
+
+.website-name {
+    height: auto;
+    width: auto;
+}
+
+.website-name h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.navbar {
+    height: fit-content;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* CSS For Lablats */
+
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo-container {
+        height: auto;
+        width: 50%;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .navbar {
+        height: auto;
+        width: 50%;
+    }
+}
+
+/* CSS For Dasktop */
+
+@media (min-width: 768px) {
+
+    /* Header */
+    .navbar a {
+        border-bottom: 1px solid transparent;
+    }
+
+    .navbar a:hover {
+        border-bottom: 1px solid white;
+    }
+}
