@@ -48,6 +48,8 @@ header {
 .website-name h1 {
     font-size: 40px;
     color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .website-name a {
@@ -94,6 +96,8 @@ header {
     text-align: center;
     color: #1E3A8A;
     line-height: 1.3;
+    font-family: 'Poppins';
+    font-weight: 550;
 }
 
 .hero p {
