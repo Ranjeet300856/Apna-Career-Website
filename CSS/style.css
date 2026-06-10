@@ -117,6 +117,65 @@ header {
     width: 100%;
 }
 
+/* About Section */
+.AboutSection {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.About {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading {
+    height: auto;
+    width: fit-content;
+    text-align: center;
+    font-size: 28px;
+    color: #1E3A8A;
+    line-height: 1.2;
+}
+
+.aboutItem {
+    height: auto;
+    width: 100%;
+}
+
+.aboutItem p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #444;
+}
+
+#aboutItemList ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#aboutItemList li {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#aboutItemList li::before {
+    content: "✓";
+    color: #1E3A8A;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 /* CSS For Lablats */
 
 @media (min-width: 768px) {
@@ -164,6 +223,33 @@ header {
         height: auto;
         width: 80%;
     }
+
+    /* About Section */
+    .AboutSection {
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .About {
+        height: auto;
+        width: 80%;
+        gap: 30px;
+    }
+
+    .aboutItem p {
+        line-height: 1.8;
+        color: #444;
+        font-size: 18px;
+    }
+
+    #aboutItemList li {
+        font-size: 20px;
+        line-height: 1.8;
+    }
 }
 
 /* CSS For Dasktop */
@@ -180,7 +266,56 @@ header {
     }
 
     /* Hero Section */
+    .HeroSection {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero {
+        justify-content: start;
+        align-items: start;
+    }
+
+    .heroItem {
+        width: 100%;
+    }
+
+    .heroItem p {
+        width: 100%;
+        text-align: justify;
+    }
+
     .hero h1 {
+        width: 100%;
         font-size: 50px;
+        text-align: left;
+    }
+
+    .heroItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* About Section */
+    .AboutSection {
+        height: fit-content;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .heading {
+        height: auto;
+        width: 100%;
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .aboutItem p {
+        text-align: start;
+    }
+
+    .About {
+        width: 100%;
     }
 }
