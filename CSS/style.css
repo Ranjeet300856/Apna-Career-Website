@@ -126,7 +126,7 @@ header {
     gap: 20px;
     align-items: center;
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .About {
@@ -176,6 +176,65 @@ header {
     margin-right: 10px;
 }
 
+/* Stream Section */
+.StreamSection {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardDiv {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    min-height: 150px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px gray;
+    transition: 0.5s;
+    border-radius: 8px;
+    border: 1px solid #1E3A8A;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: #1E3A8A;
+}
+
+.card button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1E3A8A;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+#deplomaHeading {
+    font-size: 25px;
+}
+
+
 /* CSS For Lablats */
 
 @media (min-width: 768px) {
@@ -201,7 +260,6 @@ header {
     }
 
     /* Hero Section */
-
     .hero {
         height: auto;
         width: 100%;
@@ -249,6 +307,39 @@ header {
     #aboutItemList li {
         font-size: 20px;
         line-height: 1.8;
+    }
+
+    /* Stream Section */
+    .StreamSection {
+        padding: 30px;
+    }
+
+    #streamHeading {
+        text-align: center;
+    }
+
+    .CardDiv {
+        height: auto;
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .card {
+        min-height: 170px;
+        width: 47%;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .card button {
+        margin-top: 30px;
+        font-size: 20px;
     }
 }
 
@@ -317,5 +408,17 @@ header {
 
     .About {
         width: 100%;
+    }
+
+    /* Stream Section */
+    .StreamSection {
+        height: fit-content;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .card {
+        min-height: 190px;
+        width: 30%;
     }
 }
