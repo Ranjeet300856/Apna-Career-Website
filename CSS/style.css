@@ -234,6 +234,68 @@ header {
     font-size: 25px;
 }
 
+/* Arts Stream */
+.streamMain {
+    padding: 8px;
+}
+
+.streamHoreSection {
+    height: fit-content;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.streamHeading {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.streamHeading h1 {
+    color: #1E3A8A;
+    border-bottom: 2px solid #1E3A8A;
+    text-align: center;
+}
+
+.streamHeading img {
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.heroPara {
+    height: auto;
+    width: 100%;
+    text-align: justify;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Page Contant */
+.pageContant {
+    height: fit-content;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px gray;
+}
 
 /* CSS For Lablats */
 
@@ -341,6 +403,39 @@ header {
         margin-top: 30px;
         font-size: 20px;
     }
+
+    /* Arts Stream */
+    .streamMain {
+        padding: 25px;
+    }
+
+    .streamHoreSection {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .streamHeading {
+        gap: 30px;
+    }
+
+    .streamHeading h1 {
+        font-size: 38px;
+    }
+
+    .streamHeading img {
+        height: auto;
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .heroPara {
+        height: auto;
+        width: 95%;
+        text-align: justify;
+        color: #444;
+        line-height: 1.8;
+        font-size: 18px;
+    }
 }
 
 /* CSS For Dasktop */
@@ -420,5 +515,22 @@ header {
     .card {
         min-height: 190px;
         width: 30%;
+    }
+
+    /* Arts Stream */
+    .streamMain {
+        padding: 30px;
+    }
+
+    .streamHoreSection {
+        height: fit-content;
+        width: 70%;
+        padding: 25px;
+        margin-top: 10px;
+        gap: 30px;
+    }
+
+    .streamHeading h1 {
+        font-size: 50px;
     }
 }
