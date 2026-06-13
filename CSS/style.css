@@ -298,8 +298,9 @@ header {
 }
 
 .pageContantHeading {
-    font-size: 28px;
+    font-size: 26px;
     color: #1E3A8A;
+    text-align: center;
 }
 
 .list {
@@ -324,6 +325,16 @@ header {
 
 .list a:active {
     color: #1E3A8A;
+}
+
+@media (min-width: 340px) and (max-width: 374px) {
+    .streamHeading h1 {
+        font-size: 28px;
+    }
+
+    .pageContantHeading {
+        font-size: 24px;
+    }
 }
 
 /* CSS For Lablats */
@@ -490,7 +501,7 @@ header {
 
 /* CSS For Dasktop */
 
-@media (min-width: 1024px) {
+@media (min-width: 1048px) {
 
     /* Header */
     .navbar a {
