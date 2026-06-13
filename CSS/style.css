@@ -297,6 +297,35 @@ header {
     box-shadow: 0px 0px 3px gray;
 }
 
+.pageContantHeading {
+    font-size: 28px;
+    color: #1E3A8A;
+}
+
+.list {
+    height: fit-content;
+    width: 100%;
+    padding: 15px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list li::before {
+    content: "✓";
+    color: #1E3A8A;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.list a:active {
+    color: #1E3A8A;
+}
+
 /* CSS For Lablats */
 
 @media (min-width: 768px) {
@@ -436,6 +465,27 @@ header {
         line-height: 1.8;
         font-size: 18px;
     }
+
+    /* Page Contant */
+    .pageContant {
+        padding: 30px;
+        margin-top: 30px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 0px 0px 3px gray;
+    }
+
+    .pageContantHeading {
+        font-size: 30px;
+    }
+
+    .list {
+        height: fit-content;
+        width: 100%;
+        padding: 20px;
+        line-height: 2;
+        font-size: 20px;
+    }
 }
 
 /* CSS For Dasktop */
@@ -453,8 +503,7 @@ header {
 
     /* Hero Section */
     .HeroSection {
-        width: 80%;
-        margin: 0 auto;
+        width: 75%;
     }
 
     .hero {
@@ -486,8 +535,7 @@ header {
     /* About Section */
     .AboutSection {
         height: fit-content;
-        width: 80%;
-        margin: 0 auto;
+        width: 75%;
     }
 
     .heading {
@@ -508,8 +556,13 @@ header {
     /* Stream Section */
     .StreamSection {
         height: fit-content;
-        width: 80%;
-        margin: 0 auto;
+        width: 75%;
+    }
+
+    .CardDiv {
+        height: auto;
+        width: 100%;
+        gap: 50px;
     }
 
     .card {
@@ -524,7 +577,7 @@ header {
 
     .streamHoreSection {
         height: fit-content;
-        width: 70%;
+        width: 75%;
         padding: 25px;
         margin-top: 10px;
         gap: 30px;
@@ -532,5 +585,36 @@ header {
 
     .streamHeading h1 {
         font-size: 50px;
+    }
+
+    /* Page Contant */
+    .xyz {
+        display: flex;
+        gap: 40px;
+    }
+
+    .pageContant {
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    .pageContantHeading {
+        font-size: 24px;
+    }
+
+    .list {
+        height: fit-content;
+        width: 100%;
+        padding: 20px;
+        line-height: 2;
+        font-size: 18px;
+    }
+
+    .list ul li a {
+        color: darkblue;
+    }
+
+    .list ul li a:hover {
+        color: blue;
     }
 }
