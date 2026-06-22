@@ -379,6 +379,45 @@ header {
     color: #1E3A8A;
 }
 
+/* Stream Card */
+.subjectsDiv {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.subjects {
+    min-height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px gray;
+    transition: 0.5s;
+    border-radius: 8px;
+    border: 1px solid #1E3A8A;
+}
+
+.subjects h2 {
+    font-size: 24px;
+    color: #1E3A8A;
+    margin-top: 5px;
+}
+
+.subjects p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #444;
+    margin: 10px;
+}
 
 @media (min-width: 340px) and (max-width: 392px) {
     .streamHeading h1 {
@@ -564,6 +603,31 @@ header {
         line-height: 2;
         font-size: 20px;
     }
+
+    /* Stream Card */
+    .subjectsDiv {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .subjects {
+        min-height: 170px;
+        width: 45%;
+    }
+
+    .subjects h2 {
+        font-size: 28px;
+    }
+
+    .subjects p {
+        text-align: justify;
+        line-height: 1.8;
+    }
 }
 
 /* CSS For Dasktop */
@@ -721,5 +785,22 @@ header {
 
     .list ul li a:hover {
         color: blue;
+    }
+
+    /* Stream Card */
+
+    #pc {
+        width: 100%;
+    }
+
+    .subjectsDiv {
+        height: auto;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .subjects {
+        min-height: 150px;
+        width: 22%;
     }
 }
